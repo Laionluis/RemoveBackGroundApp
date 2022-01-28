@@ -10,9 +10,9 @@ import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
-import android.os.Bundle;
-import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
+// import android.os.Bundle;
+// import com.chaquo.python.Python;
+// import com.chaquo.python.android.AndroidPlatform;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -49,9 +49,9 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
-    if (! Python.isStarted()) {
-      Python.start(new AndroidPlatform(this));
-    }
+    // if (! Python.isStarted()) {
+    //   Python.start(new AndroidPlatform(this));
+    // }
   }
 
   /**

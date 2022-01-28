@@ -1,9 +1,9 @@
 package com.removebackgroundapp;
 
 import com.facebook.react.ReactActivity;
-import android.os.Bundle;
-import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
+// import android.os.Bundle;
+// import com.chaquo.python.Python;
+// import com.chaquo.python.android.AndroidPlatform;
 
 public class MainActivity extends ReactActivity {
 
@@ -12,11 +12,11 @@ public class MainActivity extends ReactActivity {
     return "RemoveBackGroundApp";
   }
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    if (! Python.isStarted()) {
-      Python.start(new AndroidPlatform(this));
-    }
-  }
+  // @Override
+  // protected void onCreate(Bundle savedInstanceState) {
+  //   super.onCreate(savedInstanceState);
+  //   // if (! Python.isStarted()) {
+  //   //   Python.start(new AndroidPlatform(this));
+  //   // }
+  // }
 }

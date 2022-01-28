@@ -34,10 +34,6 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactMethod;
 
 import android.os.Bundle;
-import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
-import com.chaquo.python.PyObject;
-
 
 public class RemoveBG extends ReactContextBaseJavaModule {
     private static ReactApplicationContext reactContext;
@@ -63,8 +59,7 @@ public class RemoveBG extends ReactContextBaseJavaModule {
     }
 
     private String getPythonHelloWorld(){
-        Python python = Python.getInstance();
-        PyObject pythonFile = python.getModule("HelloWorld");
-        return pythonFile.callAttr("helloworld").toString();
+        
+        return "cu";
     }
 }
